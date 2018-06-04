@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>initiation bootstrap 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- tout le ccontenu d'une page bootstrapest dans une div class container -->
+    <div class="container">
+        <!-- Une navbar faite avec bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success"><!--  la nav est class navbar sur fond sombre, avec un bg (un background) et s'etend sur lg (un écran large) -->
+           <a href="#" class="navbar-brand">initiationBOOTstrap 4</a>
+           <!-- le bouton pour le menu responsive -->
+           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- la ul est dans une class avec un identifiant -->
+                <ul class="navbar-nav ml-auto"> <!-- navbar-nav supprime les puces, ml-auto empêche le débordement de la nav-->
+                    <li class="nav-item"><a href="#" class="nav-link">Acceuil</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">A propos de nous</a></li>
+                    <!-- ici on met un menu déroulant -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Voir nos produits</a>
+                        <!-- les sous-rubriques de la rubrique produit dans une div class dropdown-menu -->
+                        <div class="dropdown-menu bg-danger">
+                            <a href="#" class="dropdown-item">Produit 1</a>
+                            <a href="#" class="dropdown-item">Produit 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Autre Produits</a>
+                        </div>
+                    </li>
+                    <li class="nav-item "><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+                      <!-- ici on va mettre une section en pleine largeur sous la nav "a herosection", chez Bootstrap un "Jumbotron", c'est un composant-->
+            <div class="jumbotron">
+                <h1 class="display-4">À la une ce lundi 04 juin 2018 : bientôt l'été !!! </h1>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet adipisci magnam facilis reprehenderit. Cumque ipsum quam non provident nisi deserunt praesentium iste quo, incidunt culpa sequi. Quaerat illum voluptatibus placeat.</p>
+                <a href="#" class="btn btn-lg btn-danger">Preparez l'été !</a>
+            </div><!--  fin de la div class Jumbrotron -->
+
+                 <!-- ici on commennce la grillle de bootstrap avec une rangée et des colonnes -->
+            <div class="row">
+                <div class="col-sm-12 col-md-4"> <!-- col-sm-12 sur écran small 12 12 col de largeur, sur écran médium 4 col de largeur -->
+                    <div class="card mb-4"><!-- mb-4 margin-bottom 4 -->
+                        <div class="card-body text-center"></div>
+                            <h5 class="card-title">un titre h5 pour "a card"</h5>
+                            <p class="card-text">une petit exemple de texte dans une "carte", "a card"</p>
+                            <a href="#" class="card-link">un lien ...</a>
+                        </div><!-- fin div class card body -->
+                    </div><!-- fin div class card -->
+                </div> <!-- fin de col 1 -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">un titre h5 pour "a card"</h5>
+                            <p class="card-text">une petit exemple de texte dans une "carte", "a card"</p>
+                            <a href="#" class="card-link">un lien ...</a>
+                        </div> <!-- fin div class card body -->
+                    </div> <!-- fin div class card -->
+                </div> <!-- fin de col 2-->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">un titre h5 pour "a card"</h5>
+                            <p class="card-text">une petit exemple de texte dans une "carte", "a card"</p>
+                            <a href="#" class="card-link">un lien ...</a>
+                        </div><!-- fin div class card body -->
+                    </div><!-- fin div class card -->
+                </div> <!-- fin de col 3-->
+            </div> <!-- </div> fin de la class row -->
+            <!-- une nouvelle rangée -->
+            <div class="row mt-sm-4 mt-md-0">
+                <div class="col-sm-12 col-md-8 text-sm-center text-md-center fond_vert">
+                    <h3>un titre 3</h3>
+                    <p class="lead">un paragraphe class lead</p> <!-- la classe lead vient aprés un titre -->
+                </div>
+                <div class="col-sm-12 col-md-4 fond_rouge ">
+                    <h3>Menu secondaire</h3>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">lien 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">lien 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">lien 3</a>
+                        </li>
+                    </ul>
+                </div> <!-- fermeture div class="col-sm-12 col-md-4 fond_rouge " -->
+            </div><!-- fermeture div class="row mt-sm-4 mt-md-0" -->    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
