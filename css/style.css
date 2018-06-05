@@ -1,6 +1,6 @@
-/* body{
+body{
     background: green;
-} */
+}
 /* .card-link{
     background: limegreen;
 } */
@@ -9,4 +9,7 @@
 }
 .fond_bleu{
     background: skyblue;
+}
+.carousel-caption, .card-body{
+    background-color: rgba(22, 212, 38, 0.2);
 }
