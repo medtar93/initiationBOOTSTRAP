@@ -1,0 +1,29 @@
+@charset "UTF-8";
+ /* document css TAREK */
+
+ /* font-family: 'PT Serif', serif; */
+
+body {
+    background: pink;
+}
+.orange{
+    background: orange;
+}
+.bleuclair { 
+    background: lightblue;
+}
+
+.vertclair {
+background: lightgreen;
+}
+
+.grisclair {
+    background: lightgray;
+}
+
+.olive {
+    background: olive; }
+
+.blanc {
+    background: #fff;
+}
