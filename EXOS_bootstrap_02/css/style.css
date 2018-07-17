@@ -5,9 +5,12 @@
 
 body {
     background: pink;
+    font-family: 'PT Serif', serif;
+  
+
 }
 .orange{
-    background: orange;
+    background: orange; 
 }
 .bleuclair { 
     background: lightblue;
@@ -26,4 +29,13 @@ background: lightgreen;
 
 .blanc {
     background: #fff;
+}
+.bg-tomato{
+    background: tomato;
+}
+
+/* pour que le container ai de la place */
+
+.margeHaute{
+    margin-top: 70px;
 }
